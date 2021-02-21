@@ -8,6 +8,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 /* HEADER */
 
@@ -37,7 +46,6 @@ aside {
 .aside-top {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
 }
 
@@ -49,43 +57,52 @@ aside .logo {
     justify-content: center;
 }
 
-header i {
-    font-size: 30px;
-    display: flex;
-}
-
-header .logo img {
+aside .logo img {
     color: white;
     font-size: 30px;
     display: none;
 }
 
-aside .container-icon-menu a {
+aside i {
+    font-size: 30px;
     display: flex;
-    align-items: center;
+}
+
+
+/* navigation aside */
+
+aside ul li {
+    justify-content: center;
+    padding: 5px 0;
+}
+
+aside ul li a {
     color: rgba(255, 255, 255, .3);
-    text-decoration: none;
-}
-
-aside .container-icon-menu a:focus {
-    color: rgba(255, 255, 255, .7);
-    border-left: 5px solid green;
-}
-
-aside .icon-menu {
-    width: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-aside .container-icon-menu span {
+aside ul li a:focus {
+    color: rgba(255, 255, 255, .7);
+    border-left: 2px solid green;
+}
+
+aside ul li a .name-img-aside {
     display: none;
 }
 
 
 /* aside bottom */
 
-.aside-bottom .container-icon-menu.download i {
+aside .install-app,
+aside .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.install-app i {
     font-size: 15px;
 }
 
@@ -96,7 +113,7 @@ main {
     background-color: #141922;
     height: calc(100vh - 100px);
     padding-top: 100px;
-    margin-left: 50px;
+    margin-left: 49px;
 }
 
 
@@ -140,51 +157,80 @@ footer {
     overflow-y: auto;
 }
 
+
+/* color */
+
+.txt-white {
+    color: #FFF;
+}
+
+.txt-white-a7 {
+    color: #FFFFFF99;
+}
+
+
+/* tipography */
+
+.bold {
+    font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
     aside {
         height: calc(100vh - 100px);
         width: 300px;
         align-items: flex-start;
     }
-    header .logo {
+    aside .logo {
         justify-content: flex-start;
         height: 100px;
         align-items: center;
     }
-    header .logo i {
+    aside .logo i {
         display: none;
     }
-    header .logo img {
+    aside .logo img {
         color: white;
         font-size: 30px;
         display: flex;
         width: 60%;
     }
-    aside .aside-top,
-    .aside-bottom {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
+    /* navigation aside */
+    aside ul li a {
+        justify-content: flex-start;
+        padding: 0 20px;
     }
-    aside .icon-menu {
-        width: 70px;
+    aside ul li a .img-aside {
+        width: 50px;
     }
-    aside .container-icon-menu span {
+    aside ul li a .name-img-aside {
         display: flex;
+    }
+    /* aside playlist */
+    .playlist .img-aside {
+        display: none;
+    }
+    .playlist a:focus .img-aside {
+        display: flex;
+        justify-content: center;
+        color: black;
+        border-radius: 2px;
+        padding: 8px;
+        background-color: rgba(255, 255, 255, .7);
+    }
+    .playlist a:focus .name-img-aside {
+        margin-left: 20px;
     }
     /* aside bottom */
     .aside-bottom {
         width: 100%;
     }
-    .aside-bottom hr {
-        margin-left: 20px;
-        margin-right: 20px;
+    aside .install-app,
+    aside .user {
+        justify-content: flex-start;
     }
-    .aside-bottom .container-icon-menu.download {
-        width: 100%;
-    }
-    .aside-bottom .container-icon-menu.profile a {
-        color: rgba(255, 255, 255, 1) !important;
+    aside .install-app {
+        border-bottom: 1px solid #FFFFFF99;
     }
     /* main */
     main {
@@ -195,12 +241,20 @@ footer {
     }
     /* UTILITY-SM */
     /* -------------------------------------- */
+    /* flex */
+    .sm-display-flex {
+        display: flex;
+    }
     .sm-px-20 {
         padding-left: 20px;
         padding-right: 20px;
     }
     .sm-display-flex {
         display: flex;
+    }
+    /* margin */
+    .ml-20 {
+        margin-left: 20px;
     }
 }
 

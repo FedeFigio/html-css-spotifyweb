@@ -18,60 +18,83 @@
         <nav>
 
         </nav>
-        <aside>
-            <!-- logo -->
-            <div class="aside-top">
-                <div class="logo ">
-                    <i class="fab fa-spotify py-10 "></i>
-                    <img class="sm-px-20 " src="assets/img/logo.svg" alt="logo">
-                </div>
-                <!-- icon-menu -->
-                <div class="container-icon-menu ">
-                    <a class="py-10" href="#">
-                        <div class="icon-menu">
-                            <i class="fas fa-home "></i>
-                        </div>
-                        <span>home</span>
-                    </a>
-                </div>
-                <div class="container-icon-menu">
-                    <a class="py-10" href="#">
-                        <div class="icon-menu">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <span>cerca</span></a>
-                </div>
-                <div class="container-icon-menu ">
-                    <a class="py-10" href="#">
-                        <div class="icon-menu">
-                            <i class="fas fa-bars"></i>
-                        </div>
-                        <span>La tua Libreria</span></a>
-                </div>
-            </div>
-            <div class="aside-bottom">
-                <div class="container-icon-menu download ">
-                    <a class="py-10" href="#">
-                        <div class="icon-menu">
-                            <i class="fas fa-arrow-circle-down"></i>
-                        </div>
-                        <span>Install App</span>
-                    </a>
-                    <hr>
-                </div>
-
-                <div class="container-icon-menu profile">
-                    <a class="py-10" href="#">
-                        <div class="icon-menu">
-                            <i class="fas fa-user-circle"></i>
-                        </div>
-                        <span>Jhon Doe</span>
-                    </a>
-                </div>
-
-            </div>
-        </aside>
     </header>
+    <aside>
+        <!-- logo -->
+        <section class="aside-top">
+            <div class="logo ">
+                <i class="fab fa-spotify py-10 "></i>
+                <img class="sm-px-20 " src="assets/img/logo.svg" alt="logo">
+            </div>
+            <!-- navigation aside -->
+            <sedivction class="navigation-aside">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="img-aside"><i class="fas fa-home"></i></div>
+                            <div class="name-img-aside">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img-aside"><i class="fas fa-home"></i></div>
+                            <div class="name-img-aside">Cerca</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img-aside"><i class="fas fa-home"></i></div>
+                            <div class="name-img-aside">La tua libreria</div>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+
+                <!-- aside playlist -->
+                <div class="playlist py-10 display-none sm-display-flex">
+                    <ul>
+                        <!-- <li class="txt-white">PLAYLIST</li> -->
+                        <li>
+                            <a href="#">
+                                <div class="img-aside"><i class="fas fa-plus"></i></div>
+                                <div class="name-img-aside">Crea Playlist</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-aside"><i class="fas fa-plus"></i></div>
+                                <div class="name-img-aside">Crea Playlist</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-aside"><i class="fas fa-plus"></i></div>
+                                <div class="name-img-aside">Crea Playlist</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-aside"><i class="fas fa-plus"></i></div>
+                                <div class="name-img-aside">Crea Playlist</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+        <!-- aside bottom -->
+        <section class="aside-bottom sm-px-20">
+            <div class="install-app py-10 txt-white-a7 ">
+                <i class="fas fa-arrow-circle-down"></i>
+                <span class="display-none sm-display-flex ml-20">Install app</span>
+            </div>
+            <div class="user py-10">
+                <i class="fas fa-user-circle"></i>
+                <span class="display-none sm-display-flex ml-20 bold ">Jhon Doe</span>
+            </div>
+        </section>
+    </aside>
+
     <!-- MAIN -->
     <main>
     </main>
