@@ -27,6 +27,16 @@ nav {
     background-color: rgba(8, 11, 18, .5);
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.btn-navbar {
+    padding: 10px 30px;
+    border: 1px solid;
+    border-radius: 20px;
 }
 
 aside {
@@ -114,6 +124,67 @@ main {
     height: calc(100vh - 100px);
     padding-top: 100px;
     margin-left: 49px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: auto;
+}
+
+main .filter ul li a {
+    display: flex;
+    font-size: 16px;
+    padding: 20px;
+    color: rgba(255, 255, 255, .3);
+    flex-direction: column;
+    align-items: center;
+}
+
+main .filter ul li a:focus .focus-green {
+    height: 2px;
+    width: 30%;
+    background-color: green;
+    margin-top: 2px;
+}
+
+
+/*card track*/
+
+.card-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-track {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.track-card {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.img-track img {
+    width: 100%;
+}
+
+.track-card,
+.description-track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-track span:first-child {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.description-track span:nth-child(2) {
+    color: #FFFFFF99;
 }
 
 
@@ -142,6 +213,16 @@ footer {
     padding-bottom: 10px;
 }
 
+.my-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 /* flex */
 
@@ -149,10 +230,25 @@ footer {
     display: none;
 }
 
+.display-flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
 .container {
     padding: 20px;
     height: 100%;
-    background-color: hotpink;
     font-size: 40px;
     overflow-y: auto;
 }
@@ -173,6 +269,10 @@ footer {
 
 .bold {
     font-weight: bold;
+}
+
+.txt-size-25 {
+    font-size: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -258,6 +358,14 @@ footer {
     }
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .track-card {
+        width: calc(100% / 4);
+    }
+}
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .track-card {
+        width: calc(100% / 6);
+    }
+}
