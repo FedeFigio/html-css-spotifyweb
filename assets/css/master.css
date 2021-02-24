@@ -275,8 +275,8 @@ footer .right i {
     padding: 5px;
 }
 
-footer .right input[type="range"],
-footer .right input[type="range"]::-webkit-slider-thumb {
+footer input[type="range"],
+footer input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 100px;
     height: 5px;
@@ -284,9 +284,30 @@ footer .right input[type="range"]::-webkit-slider-thumb {
     border-radius: 30px;
 }
 
-footer .right input[type="range"]::-webkit-slider-thumb {
+footer input[type="range"]::-webkit-slider-thumb {
     width: 30px;
     background-color: #FFFFFF;
+}
+
+footer .buttons,
+footer .time {
+    display: flex;
+    align-items: center;
+}
+
+footer .buttons i {
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer .time>* {
+    padding: 5px 15px;
+    font-size: 10px;
+}
+
+footer .time input[type="range"] {
+    width: 120px;
 }
 
 
@@ -297,6 +318,10 @@ footer .right input[type="range"]::-webkit-slider-thumb {
 
 
 /* padding */
+
+.p-0 {
+    padding: 0 !important;
+}
 
 .py-10 {
     padding-top: 10px;
@@ -362,7 +387,15 @@ footer .right input[type="range"]::-webkit-slider-thumb {
 }
 
 .txt-size-25 {
-    font-size: 25px;
+    font-size: 25px !important;
+}
+
+.txt-size-40 {
+    font-size: 40px!important;
+}
+
+.txt-size-10 {
+    font-size: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -465,6 +498,9 @@ footer .right input[type="range"]::-webkit-slider-thumb {
 @media screen and (min-width: 1024px) {
     .track-card {
         width: calc(100% / 4);
+    }
+    footer .time input[type="range"] {
+        width: 300px;
     }
 }
 
