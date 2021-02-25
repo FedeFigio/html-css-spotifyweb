@@ -37,6 +37,11 @@ nav {
     padding: 10px 30px;
     border: 1px solid;
     border-radius: 20px;
+    font-weight: bold;
+}
+
+.btn-navbar:hover {
+    font-size: 20px;
 }
 
 aside {
@@ -78,6 +83,10 @@ aside i {
     display: flex;
 }
 
+aside a:hover {
+    color: rgba(255, 255, 255, .7);
+}
+
 
 /* navigation aside */
 
@@ -101,6 +110,7 @@ aside ul li a:focus {
 
 aside ul li a .name-img-aside {
     display: none;
+    padding: 5px 0;
 }
 
 
@@ -115,6 +125,11 @@ aside .user {
 
 .install-app i {
     font-size: 15px;
+}
+
+.install-app:hover {
+    color: rgba(255, 255, 255, .7);
+    cursor: pointer;
 }
 
 
@@ -145,6 +160,10 @@ main .filter ul li a:focus .focus-green {
     width: 30%;
     background-color: green;
     margin-top: 2px;
+}
+
+main .filter ul li a:hover {
+    color: rgba(255, 255, 255, .7);
 }
 
 
@@ -214,6 +233,7 @@ main .filter ul li a:focus .focus-green {
 
 .description-track span:nth-child(2) {
     color: #FFFFFF99;
+    font-size: 10px;
 }
 
 
@@ -263,8 +283,14 @@ footer {
 }
 
 footer .like-folder i {
+    color: rgba(255, 255, 255, .3);
     padding: 5px;
     font-size: 20px;
+}
+
+footer .like-folder i:hover {
+    color: rgba(255, 255, 255, .7);
+    cursor: pointer;
 }
 
 footer .like-folder {
@@ -273,6 +299,12 @@ footer .like-folder {
 
 footer .right i {
     padding: 5px;
+    color: rgba(255, 255, 255, .3);
+}
+
+footer .right i:hover {
+    color: rgba(255, 255, 255, .7);
+    cursor: pointer;
 }
 
 footer input[type="range"],
@@ -293,6 +325,7 @@ footer .buttons,
 footer .time {
     display: flex;
     align-items: center;
+    color: rgba(255, 255, 255, .3);
 }
 
 footer .buttons i {
@@ -301,12 +334,22 @@ footer .buttons i {
     cursor: pointer;
 }
 
+.fa-play-circle:hover {
+    font-size: 50px !important;
+}
+
+footer .buttons i:hover {
+    font-size: calc(100% + 10px);
+    color: rgba(255, 255, 255, .7);
+}
+
 footer .time>* {
     padding: 5px 15px;
     font-size: 10px;
+    color: rgba(255, 255, 255, .3);
 }
 
-footer .time input[type="range"] {
+footer .time footer .time input[type="range"] {
     width: 120px;
 }
 
